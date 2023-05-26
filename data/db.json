@@ -2,24 +2,6 @@
   "todos": [
     {
       "userId": 1,
-      "id": 6,
-      "title": "qui ullam ratione quibusdam voluptatem quia omnis",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 8,
-      "title": "quo adipisci enim quam ut ab",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": 9,
-      "title": "molestiae perspiciatis ipsa",
-      "completed": false
-    },
-    {
-      "userId": 1,
       "id": 10,
       "title": "illo est ratione doloremque quia maiores aut",
       "completed": true
@@ -34,7 +16,7 @@
       "userId": 1,
       "id": 13,
       "title": "et doloremque nulla",
-      "completed": false
+      "completed": true
     },
     {
       "userId": 1,
@@ -1181,6 +1163,12 @@
       "title": "varun is best",
       "completed": false,
       "id": 204
+    },
+    {
+      "userId": 1,
+      "title": "varun dhand is best best",
+      "completed": false,
+      "id": 205
     }
   ]
 }
