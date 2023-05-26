@@ -7,9 +7,11 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faUpload } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import BasicModal from "../modal/Modal";
 
 const TodoList = () => {
   const [newTodo, setNewTodo] = useState("");
+  const [showModal, setShowModal] = useState(false);
   const {
     data: todos,
     isLoading,
@@ -23,6 +25,10 @@ const TodoList = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault(); // it prevents the default behaviour of the event function...here it prevents the form from submitting(which would refresh the page)
+    if (!newTodo) {
+      setShowModal(true);
+      return;
+    }
     addTodo({ userId: 1, title: newTodo, completed: false });
     setNewTodo("");
   };
@@ -78,6 +84,7 @@ const TodoList = () => {
       <h1>Todo List</h1>
       {newItemSection}
       {content}
+      {showModal && <BasicModal showModal={showModal} />}
     </main>
   );
 };
